@@ -1,4 +1,3 @@
-
 /*                               ADDREV                           */
 
 #include<iostream>
@@ -7,34 +6,16 @@ using namespace std;
 int reverse(int a)
 {
 
-int i=1;
-int temp,counting,newa;
+int temp;
 int c=0;
 
-newa=a;
-counting=1;
-
-while(newa!=0)
-{
-
-newa=newa/10;
-counting=counting*10;
-
-}
-
-counting=counting/10;
 
 while(a!=0)
 {
 
 temp=a%10;
-
-
 a=a/10;
-temp=temp*counting;
-c=c+temp;
-counting=counting/10;
-
+c=c*10+temp;
 
 }
 
@@ -64,4 +45,3 @@ cout<<rev<<endl;
 }
 
 }
-
